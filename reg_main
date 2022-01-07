@@ -1,0 +1,592 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+
+    <style>
+        .buttonfntr {
+            backdrop-filter: blur(5px);
+        }
+
+        .buttonfnte {
+            backdrop-filter: blur(5px);
+        }
+
+        .gall {
+            backdrop-filter: blur(5px);
+
+        }
+
+        .tooltiptext {
+            backdrop-filter: blur(5px) !important;
+
+        }
+
+        .text {
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .tab {
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .tabcontent {
+            backdrop-filter: blur(5px) !important;
+
+        }
+
+        .aos-init {
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .com-btn {
+            backdrop-filter: blur(5px) !important;
+
+        }
+
+        .notif {
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .reg-box {
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .test {
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .dropdown-menu {
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .contact {
+            backdrop-filter: blur(5px) !important;
+
+        }
+
+        .reg-success {
+            backdrop-filter: blur(5px) !important;
+
+        }
+
+        .clipped {
+            clip-path: url(#svgTextPath);
+            backdrop-filter: blur(5px);
+
+        }
+
+        .abt {
+
+            backdrop-filter: blur(5px) !important;
+
+        }
+
+        .bgblurred {
+            backdrop-filter: blur(10px) !important;
+
+        }
+
+        .com-btn2 {
+            backdrop-filter: blur(10px) !important;
+
+        }
+
+        .container-contact {
+            backdrop-filter: blur(5px) !important;
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        @font-face {
+            font-family: euro;
+            src: url(https://fonts.googleapis.com/css?family=Lato);
+        }
+
+        body {
+            background: url(/pic/BGMI.jpg);
+            font-family: lato;
+            background-attachment: fixed;
+            background-position: center;
+
+            /* background-color: black; */
+        }
+
+        h3 {
+            letter-spacing: 1px;
+        }
+
+        .reg-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid white;
+            border-radius: 5px;
+            width: 100%;
+            height: 35px;
+            letter-spacing: 1px;
+            color: white;
+            font-size: 16px;
+            padding-left: 1rem;
+        }
+
+        .submit-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid white;
+            border-radius: 5px;
+            width: 100%;
+            height: 35px;
+            letter-spacing: 1px;
+            color: white;
+            font-size: 16px;
+
+        }
+
+        .reg-success {
+            color: #96dd58;
+        }
+
+        ::placeholder {
+            position: relative;
+            opacity: 1;
+            color: white;
+        }
+
+        option {
+            /*background-color: rgba(255,255,255,0.14);*/
+            color: black;
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-btn1').click(function () {
+                $('.dropdown-container1').toggle("slide");
+            });
+        });
+        $(document).ready(function () {
+            $('.dropdown-btn2').click(function () {
+                $('.dropdown-container2').toggle("slide");
+            });
+        });
+        $(document).ready(function () {
+            $('.dropdown-btn3').click(function () {
+                $('.dropdown-container3').toggle("slide");
+            });
+        });
+
+    </script>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            display: none;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .dropdown-container1 {
+            display: none;
+            /*background-color: #262626;*/
+            padding-left: 8px;
+        }
+
+        .dropdown-container2 {
+            display: none;
+            /*background-color: #262626;*/
+            padding-left: 8px;
+        }
+
+        .dropdown-container3 {
+            display: none;
+            /*background-color: #262626;*/
+            padding-left: 8px;
+        }
+
+
+
+        #logo {
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: inline;
+            transition: top 0.3s;
+
+        }
+
+        #logo-img {
+            position: fixed;
+            top: 1.5vh;
+            left: 0.5vh;
+            /*width: 100%;*/
+            /*max-height: 50px !important;*/
+            display: inline;
+            transition: top 0.3s;
+
+        }
+
+        #right-nav {
+            z-index: 10;
+        }
+
+        #navbar {
+            /*background-color: #333;*/
+            position: fixed;
+            z-index: 10;
+
+            top: 0;
+            left: 29vh;
+            width: 100%;
+            display: inline;
+            transition: top 0.3s;
+        }
+
+        .navgrad {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        }
+
+        #signbtn {
+            position: fixed;
+            background: #268AFF;
+            z-index: 100;
+            color: #fff;
+            width: 8.5vh;
+            height: 2.8vh;
+            text-align: center;
+            /*padding: 5px;*/
+            border: 0.5px solid #FFFFFF;
+            border-radius: 20px;
+            top: 1.5vh;
+            right: 7.7vh;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .button_container {
+            position: fixed;
+            top: 1.7vh;
+            right: 1.2vh;
+
+            height: 27px;
+            width: 35px;
+            cursor: pointer;
+            z-index: 200;
+            transition: opacity 0.25s ease;
+        }
+
+        .button_container:hover {
+            opacity: 0.7;
+        }
+
+        .button_container.active .top {
+            transform: translateY(11px) translateX(0) rotate(45deg);
+            background: #fff;
+        }
+
+        .button_container.active .middle {
+            opacity: 0;
+            background: #fff;
+        }
+
+        .button_container.active .bottom {
+            transform: translateY(-11px) translateX(0) rotate(-45deg);
+            background: #fff;
+        }
+
+        .button_container span {
+            background: #fff;
+            border: none;
+            height: 0.2vh;
+            width: 80%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.35s ease;
+            cursor: pointer;
+        }
+
+        .button_container span:nth-of-type(2) {
+            top: 8px;
+        }
+
+        .button_container span:nth-of-type(3) {
+            top: 16px;
+        }
+
+        .overlay {
+            position: fixed;
+            z-index: 101;
+            background: #000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+            overflow: hidden;
+        }
+
+        .overlay.open {
+            opacity: 0.9;
+            visibility: visible;
+            height: 100%;
+        }
+
+        .overlay.open li {
+            animation: fadeInRight 0.5s ease forwards;
+            animation-delay: 0.35s;
+        }
+
+        .overlay.open li:nth-of-type(2) {
+            animation-delay: 0.4s;
+        }
+
+        .overlay.open li:nth-of-type(3) {
+            animation-delay: 0.45s;
+        }
+
+        .overlay.open li:nth-of-type(4) {
+            animation-delay: 0.5s;
+        }
+
+        .overlay nav {
+            position: relative;
+            height: 100%;
+            top: 70%;
+            /*width: 100%;*/
+            transform: translateY(-50%);
+            font-size: 30px;
+            font-family: 'Varela Round', serif;
+            font-weight: 400;
+            text-align: center;
+
+        }
+
+        .overlay ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: inline-block;
+            position: relative;
+            height: 100%;
+        }
+
+        .overlay ul li {
+            display: block;
+            /*height: 25%;*/
+            /*height: calc(100% / 4);*/
+            min-height: 50px;
+            position: relative;
+            opacity: 0;
+        }
+
+        .overlay ul li a {
+            display: block;
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .overlay ul li a:hover:after,
+        .overlay ul li a:focus:after,
+        .overlay ul li a:active:after {
+            width: 100%;
+        }
+
+        .overlay ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            transform: translateX(-50%);
+            height: 3px;
+            background: #fff;
+            transition: 0.35s;
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                left: 20%;
+            }
+
+            100% {
+                opacity: 1;
+                left: 0;
+            }
+        }
+
+        .overlay-menu {
+            font-family: euro !important;
+        }
+
+        /*    YASH BT*/
+
+        .mainbtn {
+            position: fixed;
+            background: #268AFF;
+            z-index: 100;
+            color: #fff !important;
+            width: 8.5vh;
+            height: 2.8vh;
+            text-align: center;
+            /*padding: 5px;*/
+            border: 0.5px solid #FFFFFF;
+            border-radius: 20px;
+            top: 1.5vh;
+            right: 7.7vh;
+        }
+    </style>
+
+
+
+    <div style="margin-top: 50px;"   class="container mb-5">
+        <form action="{% url 'submit' %}" method="post">
+            <!-- {% csrf_token %} -->
+            <div class="row">
+                <div class="col-md-12 col-12" style="margin-bottom: 30px;" >
+                    <h3 class="text-center text-white">REGISTRATION FORM</h3>
+                </div>
+                <div class="col-md-12 mb-3 col-12" style="margin-top: 20px;">
+                    <input type="text" class="reg-box" placeholder="Name" name="name" required="">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 mb-3 col-12">
+                    <input type="text" class="reg-box" placeholder="Email" name="email" required="">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 mb-3 col-12" style="margin-top: -15px;">
+                    <input type="text" class="reg-box" placeholder="Phone" name="phone" required=""
+                        oninvalid="this.setCustomValidity('Enter a Valid Phone Number')"
+                        onchange="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row mb-3">
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 mb-3 col-12" style="margin-top: -30px;">
+                    <select type="text" class="reg-box" name="year" required>
+                        <option disabled="disabled" selected="selected" value="">Year</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth Year</option>
+                    </select>
+                </div>
+                <div class="col-md-12 mb-3 col-12">
+                    <select type="text" class="reg-box" name="year" required>
+                        <option disabled="disabled" selected="selected">Branch</option value="">
+                        <option value="CSE -Ai and ML">CSE - AI and ML</option>
+                        <option value="CSE - DS">CSE - DS</option>
+                        <option value="CSE - IOT">CSE - IOT</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="Mechanical">Mechanical</option>
+                    </select>
+                </div>
+                <div class="col-md-12 mb-3 col-12">
+                    <select type="text" class="reg-box" name="year" required>
+                        <option disabled="disabled" selected="selected" value="">Section</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+                <div class="col-md-12 mb-3 col-12">
+                    <select type="text" class="reg-box" name="year" required>
+                        <option disabled="disabled" selected="selected" value="">Event/Competition</option>
+                        <option value="C Programming">C Programming</option>
+                        <option value="Python Programming">Python Programming</option>
+                        <option value="Online gaming">Online gaming</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12 col-12 d-flex justify-content-end">
+                    <input type="submit" class="submit-box" style="background: #268AFF;color: white;">
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+
+        var subNav = false;
+        $('.sub-nav-dropdown').click(function () {
+            if (subNav == false) {
+                //    Dropdown is closed. Open in
+                $('.sub-nav-dropdown').css('transform', 'rotate(180deg)');
+                $('.sub-nav-dropdown-content').slideDown('slow');
+                subNav = true;
+            }
+            else {
+                $('.sub-nav-dropdown').css('transform', 'rotate(0deg)');
+                $('.sub-nav-dropdown-content').slideUp('slow');
+                subNav = false;
+            }
+        });
+    </script>
+    <script>
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+
+    </script>
+
+
+</body>
+
+</html>
